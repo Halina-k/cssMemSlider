@@ -16,8 +16,11 @@ body {
 	box-sizing: border-box;
 }
 
+body .wraper {
+  padding-top: 5rem;
+}
+
 .wraper {
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +41,6 @@ body {
   transition: 0.3s ease-out;
   width: 500%;
   display: flex;
-
 }
 
 img {
@@ -56,7 +58,8 @@ img {
 }
 
 .description-wrapper {
-  width: 70rem;
+  max-width: 70rem;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -164,3 +167,48 @@ label:active > .radio-button {
 #slide5:checked ~ .slaid-wrapper .description-wrapper .description-container {
   transform: translateX(-80%);
 }
+
+
+@media screen and (max-width: 800px) {
+  .wraper {
+    max-width: 80rem;
+  }
+
+  img {
+    max-width: 50rem;
+}
+
+}
+
+
+@media screen and (max-width: 630px) {
+  .wraper {
+    max-width: 80rem;
+  }
+
+  img {
+    max-width: 25rem;
+    width: 100%;
+  }
+
+  .description-wrapper {
+    max-width: 50rem;
+    /* min-width: 50rem; */
+    order: 2;
+  }
+  
+
+  .slaid-wrapper {
+    margin-top: 2.5rem;
+    flex-direction: column;
+  }
+
+  .paginator {
+    justify-content: center;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+}
+
+/* 320x568, */
