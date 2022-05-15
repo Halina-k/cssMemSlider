@@ -5,6 +5,12 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+  background: url(./assets/img/print.png);
+  padding: 3rem;
+  /* padding-top: 3rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -17,7 +23,7 @@ body {
 }
 
 body .wraper {
-  padding-top: 3rem;
+  padding-top: 1.8rem;
   /* border: 2px solid rgb(115, 115, 115);
   border-radius: 0 0 10px 10px; */
 }
@@ -30,14 +36,18 @@ body .wraper {
   max-width: 110rem;
   width: 100%;
   padding: 0 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px #00000014, 0 0 1px #0100001a;
+  padding-bottom: 2rem;
 }
 
 .img-wrapper {
-  /* background-image: url(./assets/img/01.jpeg);
-  backdrop-filter: blur(5px); */
+
   background-color: black;
   width: 100%;
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .img-container,
@@ -56,9 +66,9 @@ img {
 
 .slaid-wrapper {
   display: flex;
-  /* justify-content: space-between; */
   margin-top: 3rem;
   width: 100%;
+  /* margin-bottom: 2rem; */
 }
 
 .description-wrapper {
@@ -67,18 +77,13 @@ img {
   overflow: hidden;
 }
 
-/* .description-container {
-  width: 500%;
-  display: flex;
-} */
-
 .description-container > p {
   font-family: Montserrat;
   font-weight: 300;
   font-size: 2.2rem;
   line-height: 3.2rem;
   width: 100%;
-  color: rgb(104, 104, 104);;
+  color: #086221;
 }
 
 header {
@@ -87,11 +92,12 @@ header {
   justify-content: center;
 }
 
-header div {
+.title {
   font-family: Montserrat;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 3rem;
-  color: rgb(104, 104, 104);;
+  color: #086221;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -117,28 +123,20 @@ label {
   height: 100%;
   display: block;
   border-radius: 2rem;
-  background: rgb(157, 157, 157);
+  background:  #086221;
   transition: background 0.2s linear;
 }
-
-/* .label {
-  width: 3rem;
-  height: 3rem;
-  padding: 0.8rem;
-  cursor: pointer;
-  user-select: none;
-} */
 
 
 label:hover > .radio-button,
 label:focus > .radio-button {
-  background: rgb(104, 104, 104);
+  background: #CFAF06;
   transition: 0.2s linear;
 }
 
 label:hover > .radio-button,
 label:focus > .radio-button {
-  background: rgb(104, 104, 104);
+  background: #CFAF06;
   transition: 0.2s linear;
 }
 
@@ -155,7 +153,7 @@ label:active > .radio-button {
 #slide4:checked ~ .slaid-wrapper .paginator label:nth-child(4) .radio-button,
 #slide5:checked ~ .slaid-wrapper .paginator label:nth-child(5) .radio-button {
 
-  background: rgb(157, 157, 157);
+  background:  #086221;
   transform: scale(1.2);
   outline: 0.3rem solid rgba(255, 255, 255);
   outline-offset: -0.4rem;
@@ -168,7 +166,7 @@ label:active > .radio-button {
 #slide4:checked ~ .slaid-wrapper .paginator label:nth-child(4):hover .radio-button,
 #slide5:checked ~ .slaid-wrapper .paginator label:nth-child(5):hover .radio-button {
 
-  background: rgb(104, 104, 104);
+  background: #CFAF06;
 
 }
 
@@ -190,29 +188,31 @@ label:active > .radio-button {
 }
 
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 1440px) {
   .wraper {
     max-width: 80rem;
   }
 
   img {
-    max-width: 50rem;
+    max-width: 42rem;
   }
 
   .description-wrapper {
-    max-width: 38rem;
+    max-width: 55rem;
   }
 
 }
 
 
 @media screen and (max-width: 630px) {
-  /* .wraper {
-    max-width: 80rem;
-  } */
+  body {
+    padding: 2rem;
+  }
 
   img {
-    max-width: 45rem;
+    max-width: 30rem;
     width: 100%;
   }
 
@@ -237,16 +237,20 @@ label:active > .radio-button {
 
 @media screen and (max-width: 530px) {
   img {
-    max-width: 35rem;
+    max-width: 25rem;
   }
+
+  /* .slaid-wrapper {
+    margin-bottom: 0rem;
+   } */
 }
 
 @media screen and (max-width: 430px) {
   img {
-    max-width: 25rem;
+    max-width: 22rem;
   }
 
-  header div {
+  .title {
     font-size: 2.2rem;
   }
 
@@ -258,6 +262,11 @@ label:active > .radio-button {
   body .wraper {
     padding-top: 2.4rem;
  }
+/* 
+ .slaid-wrapper {
+  margin-bottom: -1rem;
+ } */
+
 }
 
 
