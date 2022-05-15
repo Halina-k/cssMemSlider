@@ -24,8 +24,6 @@ body {
 
 body .wraper {
   padding-top: 1.8rem;
-  /* border: 2px solid rgb(115, 115, 115);
-  border-radius: 0 0 10px 10px; */
 }
 
 .wraper {
@@ -38,7 +36,7 @@ body .wraper {
   padding: 0 2rem;
   background-color: rgb(255, 255, 255);
   border-radius: 1rem;
-  box-shadow: 0 4px 12px #00000014, 0 0 1px #0100001a;
+  box-shadow: 0 0.5rem 1.2rem #00000014, 0 0 0.1rem #0100001a;
   padding-bottom: 2rem;
 }
 
@@ -68,7 +66,6 @@ img {
   display: flex;
   margin-top: 3rem;
   width: 100%;
-  /* margin-bottom: 2rem; */
 }
 
 .description-wrapper {
@@ -142,8 +139,7 @@ label:focus > .radio-button {
 
 label:active > .radio-button,
 label:active > .radio-button {
- width: 85%;
- height: 85%;
+ transform: scale(0.8);
  transition: 0.2s linear;
 }
 
@@ -155,6 +151,7 @@ label:active > .radio-button {
 
   background:  #086221;
   transform: scale(1.2);
+  /* transform-origin: 50% 50%; */
   outline: 0.3rem solid rgba(255, 255, 255);
   outline-offset: -0.4rem;
 
@@ -223,7 +220,7 @@ label:active > .radio-button {
   
 
   .slaid-wrapper {
-    margin-top: 2.5rem;
+    margin-top: 3.3rem;
     flex-direction: column;
   }
 
