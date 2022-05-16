@@ -151,10 +151,8 @@ label:active > .radio-button {
 
   background:  #086221;
   transform: scale(1.2);
-  /* transform-origin: 50% 50%; */
   outline: 0.3rem solid rgba(255, 255, 255);
   outline-offset: -0.4rem;
-
 }
 
 #slide1:checked ~ .slaid-wrapper .paginator label:nth-child(1):hover .radio-button,
